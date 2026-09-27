@@ -26,6 +26,11 @@ $(function(){
 	$(".menukapat").click(function(){
 		$(".mobilmenu").hide('slow');
 	});
+	// Mobil menüde alt menüler dokunarak açılır/kapanır
+	$(".mobilmenum .mobilac").click(function(e){
+		e.preventDefault();
+		$(this).parent("li").toggleClass("acik");
+	});
 });
 
 $(function(){

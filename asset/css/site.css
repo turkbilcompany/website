@@ -206,6 +206,53 @@ select:focus{
 	float: initial;
 	margin-left: 5px;
 }
+/* Mobil menüde alt menüler hover yerine dokunmayla (.acik) açılır */
+.mobilmenum .acilirmenu{
+	display: none;
+	opacity: 1;
+	visibility: visible;
+	transform: none;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 0;
+	margin-top: 10px;
+	padding: 4px 0;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: none;
+	border: none;
+	box-shadow: none;
+}
+.mobilmenum .acilirmenu li{
+	float: none;
+	display: block;
+	width: auto;
+	margin: 0;
+	padding: 10px 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.mobilmenum .acilirmenu li:last-child{
+	border-bottom: none;
+}
+.mobilmenum .acilirmenu li a{
+	color: #fff;
+	font-size: 15px;
+}
+.mobillogo img{
+	max-width: 170px;
+	height: auto;
+}
+.mobilmenum li.acik > .acilirmenu{
+	display: block;
+}
+.mobilmenum li.ac > a span svg{
+	transition: transform .2s;
+}
+.mobilmenum li.acik > a span svg{
+	transform: rotate(180deg);
+}
 .mobillogo{
 	float: left;
 	width: 100%;
