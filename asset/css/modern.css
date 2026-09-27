@@ -1,0 +1,371 @@
+/* ==========================================================================
+   Türkbil — 2026 sadeleştirme katmanı
+   site.css ve header-notification.css'ten SONRA yüklenir; mevcut kuralları
+   ezer. Kaldırmak için header.php'deki <link> satırını silmek yeterli.
+
+   Renk hiyerarşisi:
+   - Lacivert  : yapı (üst bar, hero, footer, kart başlıkları)
+   - Kırmızı   : marka vurgusu (logo, ikon, ikincil buton)
+   - Yeşil     : sadece işlem butonları (Sorgula, Satın Al, Kabul Et)
+   ========================================================================== */
+
+:root{
+	--tb-navy: #0b2545;
+	--tb-navy-2: #13315c;
+	--tb-blue: #004b93;
+	--tb-red: #c4162b;
+	--tb-red-soft: #fdecee;
+	--tb-green: #008a3e;
+	--tb-green-dark: #006e31;
+	--tb-text: #1f2937;
+	--tb-muted: #4b5563;
+	--tb-border: #e5e7eb;
+	--tb-surface: #ffffff;
+	--tb-bg: #f5f6f8;
+	--tb-radius: 12px;
+	--tb-shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 4px 16px rgba(16, 24, 40, .06);
+	--tb-shadow-hover: 0 2px 4px rgba(16, 24, 40, .06), 0 12px 28px rgba(16, 24, 40, .10);
+}
+
+/* --- Üst bar ve menü ---------------------------------------------------- */
+.header{
+	background: var(--tb-navy);
+}
+.headersagmenu .dil,
+.headersagmenu .dil2{
+	background: rgba(255, 255, 255, .14);
+	border-right: none;
+	border-radius: 5px;
+}
+.headeralt{
+	border-top: none;
+	border-bottom: 1px solid var(--tb-border);
+	border-image: none;
+}
+.logo::after{
+	display: none;
+	animation: none;
+}
+
+/* Müşteri Paneli: akan gökkuşağı çerçeve yerine sade lacivert çerçeve */
+.musterigirisi a{
+	background: var(--tb-navy);
+	animation: none;
+	border-radius: 8px;
+	color: var(--tb-navy);
+}
+.musterigirisi a::before{
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	border-radius: 6px;
+}
+.musterigirisi a:hover{
+	transform: none;
+	font-weight: 650;
+}
+.musterigirisi a:hover::before{
+	background: var(--tb-navy);
+}
+.musterigirisi a:hover,
+.musterigirisi a:hover svg{
+	color: #fff;
+}
+.musterigirisi a:hover svg{
+	transform: none;
+}
+
+/* Mobil menü */
+.mobilbars{
+	color: var(--tb-navy);
+}
+.mobilmenu{
+	background: var(--tb-navy);
+}
+.musterigirisimobil a{
+	border: 2px solid #fff;
+	color: var(--tb-navy);
+}
+
+/* --- Kampanya bandı ----------------------------------------------------- */
+#promoBanner{
+	background-color: var(--tb-bg);
+	color: var(--tb-text);
+	border-bottom: 1px solid var(--tb-border);
+}
+#promoBanner::before{
+	display: none;
+	animation: none;
+}
+#promoBanner b{
+	color: var(--tb-red);
+}
+#promoBanner .badge{
+	background: transparent;
+	color: var(--tb-navy);
+	border: 1px dashed var(--tb-navy);
+	letter-spacing: .5px;
+}
+#promoBanner .close{
+	color: var(--tb-muted);
+}
+
+/* --- Hero --------------------------------------------------------------- */
+.ana{
+	background: linear-gradient(135deg, var(--tb-navy) 0%, var(--tb-navy-2) 60%, var(--tb-blue) 100%);
+}
+.anasolbuton a{
+	background: #fff;
+	color: var(--tb-navy);
+	box-shadow: none;
+}
+.anasolbuton a:hover{
+	background: #e8eef7;
+	color: var(--tb-navy);
+	box-shadow: none;
+	transform: none;
+}
+
+/* İç sayfa hero: kırmızı görsel yerine lacivert zemin */
+.sunucu,
+.sunucum{
+	background: linear-gradient(135deg, var(--tb-navy) 0%, var(--tb-navy-2) 60%, var(--tb-blue) 100%);
+}
+.tabmenu ul li:hover{
+	background: rgba(255, 255, 255, .15);
+}
+.tabmenu ul li.aktif{
+	background: #fff;
+	color: var(--tb-navy);
+}
+
+/* --- Alan adı kutusu ---------------------------------------------------- */
+.domain{
+	box-shadow: var(--tb-shadow);
+	border: 1px solid var(--tb-border);
+}
+/* Uzun placeholder Sorgula butonunun altına girmesin */
+.domainforminput input{
+	padding-right: 140px;
+	text-overflow: ellipsis;
+	color: var(--tb-text);
+}
+.domainsagelipse svg circle,
+.fizikselelipse svg circle{
+	fill: #d1d5db;
+}
+.domainformbuton button{
+	background: var(--tb-green);
+}
+.domainformbuton button:hover{
+	background: var(--tb-green-dark);
+	font-weight: inherit;
+	transform: none;
+	box-shadow: none;
+}
+.domainformbuton button:hover svg,
+.domainformbuton button:hover i{
+	transform: none;
+}
+.fiyatlar ul li a{
+	border-color: var(--tb-border);
+	border-radius: 10px;
+}
+.fiyatlar ul li a:hover{
+	transform: none;
+	box-shadow: var(--tb-shadow);
+}
+.fiyatlar ul li a:hover span{
+	transform: none;
+	box-shadow: none;
+}
+.fiyatlar ul li span{
+	color: var(--tb-text);
+	border-left-color: var(--tb-border);
+}
+
+/* --- Neden Türkbil kartları: üç farklı renk yerine tek kart dili -------- */
+.desteksolyazi{
+	color: var(--tb-muted);
+	font-size: 14px;
+}
+.desteksolbuton{
+	box-shadow: none;
+}
+.desteksolbuton a{
+	white-space: nowrap;
+}
+.desteksag,
+.desteksag1,
+.desteksag2{
+	background: var(--tb-surface);
+	border: 1px solid var(--tb-border);
+	border-radius: var(--tb-radius);
+	box-shadow: var(--tb-shadow);
+	box-sizing: border-box;
+	transition: box-shadow .2s ease;
+}
+.desteksag:hover,
+.desteksag1:hover,
+.desteksag2:hover{
+	box-shadow: var(--tb-shadow-hover);
+}
+.desteksagico{
+	background: var(--tb-red-soft);
+}
+.desteksag .desteksagbaslik,
+.desteksag1 .desteksagbaslik,
+.desteksag2 .desteksagbaslik{
+	color: var(--tb-navy);
+}
+.desteksag .desteksagyazi,
+.desteksag1 .desteksagyazi,
+.desteksag2 .desteksagyazi{
+	color: var(--tb-muted);
+	font-size: 14px;
+	line-height: 22px;
+}
+
+/* --- Paket kartları (hosting / bulut) ----------------------------------- */
+.tab_icerikim{
+	border: 1px solid var(--tb-border);
+	border-radius: var(--tb-radius);
+	box-shadow: var(--tb-shadow);
+	background: var(--tb-surface);
+	overflow: hidden;
+}
+.tabbaslik{
+	background: var(--tb-navy);
+	border-radius: 0;
+}
+.tabmenufiyat,
+.tabmenufiyat span{
+	color: var(--tb-navy);
+}
+.tabmenubuton a,
+.fizikselmenubuton a{
+	background: var(--tb-green);
+}
+.tabmenubuton a:hover,
+.fizikselmenubuton a:hover{
+	background: var(--tb-green-dark);
+}
+
+/* Fiziksel sunucu tablosu */
+.fizikselmenu:nth-child(2n) .fizikselmenusag{
+	background: var(--tb-bg);
+}
+.fizikselsag{
+	background: var(--tb-navy);
+}
+.fizikselmenusol{
+	background: var(--tb-navy-2);
+}
+
+/* Uzman yardımı bandı */
+.ozelteklifbg{
+	background: linear-gradient(120deg, rgba(11, 37, 69, .92) 0%, rgba(11, 37, 69, .55) 100%);
+}
+.ozelteklifsagbuton a{
+	background: #fff;
+	color: var(--tb-navy);
+}
+
+/* Paket satırları: mint yeşili şerit yerine nötr gri */
+.tabmenum ul li{
+	background: var(--tb-bg);
+	color: var(--tb-text);
+}
+.tabmenum ul li:nth-child(2n){
+	background: var(--tb-surface);
+}
+
+/* --- Tanıtım görselleri: mavi/sarı/pembe/yeşil halkalar yerine tek ton -- */
+.turkwhysvg{
+	display: none;
+}
+.turkwhyyazi{
+	color: var(--tb-muted);
+}
+.yorumsagborder,
+.yorum:nth-child(n) .yorumsagborder{
+	background: var(--tb-red);
+}
+.yorumsolbg,
+.yorum:nth-child(n) .yorumsolbg{
+	background: rgba(11, 37, 69, .12);
+}
+.yorumsolbg2,
+.yorum:nth-child(n) .yorumsolbg2{
+	background: rgba(11, 37, 69, .22);
+}
+
+/* --- SSS kartları: her kart farklı pastel yerine tek stil --------------- */
+.sorupaketic,
+.sorupaketic:nth-child(n){
+	background: var(--tb-surface);
+	border: 1px solid var(--tb-border);
+	box-shadow: var(--tb-shadow);
+}
+.sorupaketsvg,
+.sorupaketic:nth-child(n) .sorupaketsvg{
+	background: var(--tb-navy);
+}
+.sorupaketbaslik{
+	color: var(--tb-navy);
+}
+
+/* --- Footer ------------------------------------------------------------- */
+.footer{
+	background: var(--tb-navy);
+}
+.foooter,
+.iletisimborder{
+	border-image: none;
+	border-color: rgba(255, 255, 255, .12);
+}
+.iletisimborder{
+	border-color: var(--tb-border);
+}
+
+/* --- Çerez bildirimi ---------------------------------------------------- */
+#cookieConsent{
+	background: rgba(11, 37, 69, .92);
+}
+#cookieConsent .cc-btn.accept{
+	background-image: none;
+	background-color: var(--tb-green);
+}
+
+@media (max-width: 900px){
+	.domainforminput input{
+		padding-right: 64px;
+	}
+}
+
+/* --- Animasyonlar -------------------------------------------------------
+   WOW.js'in tada / flipInX / fadeInUp gibi gösterişli girişleri yerine
+   kısa ve sade bir belirme. WOW süreyi inline yazdığı için !important. */
+@keyframes tbFadeIn{
+	from{ opacity: 0; transform: translateY(8px); }
+	to{ opacity: 1; transform: none; }
+}
+.wow.animated,
+.animated.wow{
+	animation-name: tbFadeIn !important;
+	animation-duration: .45s !important;
+	animation-timing-function: ease-out !important;
+}
+
+@media (prefers-reduced-motion: reduce){
+	*,
+	*::before,
+	*::after{
+		animation: none !important;
+		transition: none !important;
+	}
+	.wow{
+		visibility: visible !important;
+	}
+}

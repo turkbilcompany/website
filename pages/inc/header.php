@@ -39,13 +39,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="robots" content="index, follow">
     <meta property="og:site_name" content="Türkbil">
-    <meta name="theme-color" content="#00de91">
+    <meta name="theme-color" content="#0b2545">
 
 
     <link rel="stylesheet" href="../asset/css/libs/animate.css">
     <link rel="stylesheet" href="../asset/css/reset.css">
     <link rel="stylesheet" href="../asset/css/site.css">
     <link rel="stylesheet" href="../asset/css/header-notification.css">
+    <link rel="stylesheet" href="../asset/css/modern.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 

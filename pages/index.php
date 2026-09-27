@@ -16,8 +16,8 @@ require 'inc/header.php';
                 <div class="anaduzenle">
                     <div class="anasol">
                         <div class="anasolbaslik" data-aos="fade-up" data-aos-duration="1000"> Dünyanın verisi, </div>
-                        <div class="anasolyazi" data-aos="fade-up" data-aos-duration="1000"> <h1 id="animated-text" data-speed="80" data-sync="simul"> Türkiye'de kalsın </h1> </div>
-                        <div class="anasolyazim" data-aos="fade-up" data-aos-duration="1000"> <p class="typewriter" data-speed="40"> Fiberoptik omurga, yedekli donanım ve yerli veri merkeziyle; alan adından bulut sunucuya kadar bilişim altyapınızı tek çatı altında yönetin.
+                        <div class="anasolyazi" data-aos="fade-up" data-aos-duration="1000"> <h1> Türkiye'de kalsın </h1> </div>
+                        <div class="anasolyazim" data-aos="fade-up" data-aos-duration="1000"> <p> Fiberoptik omurga, yedekli donanım ve yerli veri merkeziyle; alan adından bulut sunucuya kadar bilişim altyapınızı tek çatı altında yönetin.
  
  
 
@@ -46,7 +46,7 @@ require 'inc/header.php';
         <div class="genel">
             <div class="paketler">
                 <div class="paketlerduzenle">
-                    <div class="domain" style="box-shadow: 2px 2px 5px #004d1a;">
+                    <div class="domain">
                         <div class="domainsol">
                             <div class="domainsolyazi">
                                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +76,7 @@ require 'inc/header.php';
                         <div class="domainform">
                             <div class="domainforminput">
                                 <form action="https://my.turkbil.net.tr/alan-adi" method="GET">
-                                    <input type="text" name="domain" placeholder="Sorgulamak istediğiniz alan adını buraya yazabilirsiniz" class="typewriter" data-speed="160" data-sync="simul" data-loop="infinite" data-alt="alanadınız.com" style="box-shadow: 2px 3px 3px #2a964a;">
+                                    <input type="text" name="domain" placeholder="Sorgulamak istediğiniz alan adını buraya yazabilirsiniz" aria-label="Alan adı sorgula">
                                     <div class="domainformbuton">
                                         <button type="submit">
                                             <i class="fa-brands fa-sistrix"></i>
@@ -225,112 +225,6 @@ require 'inc/header.php';
 
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    
-    const nodes = document.querySelectorAll('#animated-text, .typewriter');
-    const speedDefault = 50; 
 
-    const items = Array.from(nodes).map(el => {
-      const isInput = el.tagName && el.tagName.toLowerCase() === 'input';
-      const text = isInput ? (el.getAttribute('placeholder') || '').trim() : (el.textContent || '').trim();
-      
-      if (!isInput) {
-        const finalHeight = el.scrollHeight;
-        el.style.minHeight = finalHeight + 'px';
-        if (getComputedStyle(el).display === 'inline') {
-          el.style.display = 'inline-block';
-        }
-      }
-      const alt = (el.getAttribute('data-alt') || el.getAttribute('data-alt-text') || '').trim();
-      const texts = [text];
-      if (alt) texts.push(alt);
-      return {
-        el,
-        text,
-        texts,
-        currentIndex: 0,
-        speed: parseInt(el.getAttribute('data-speed'), 10) || speedDefault,
-        sync: el.getAttribute('data-sync') || '',
-        loop: (function(){
-          const v = (el.getAttribute('data-loop') || '').toLowerCase();
-          return v === 'infinite' || v === 'true' || v === '1';
-        })(),
-        loopDelay: parseInt(el.getAttribute('data-loop-delay'), 10) || 1000,
-        isInput
-      };
-    });
-
-    
-    items.forEach(item => {
-      if (item.isInput) {
-        item.el.setAttribute('placeholder', '');
-      } else {
-        item.el.textContent = '';
-      }
-    });
-
-  function typeElement(item, cb) {
-    let i = 0;
-    (function step() {
-      if (i < item.text.length) {
-          if (item.isInput) {
-            const current = item.el.getAttribute('placeholder') || '';
-            item.el.setAttribute('placeholder', current + item.text.charAt(i));
-          } else {
-            item.el.textContent += item.text.charAt(i);
-          }
-          i++;
-          setTimeout(step, item.speed);
-      } else {
-        cb && cb();
-      }
-    })();
-  }
-
-  function startTyping(item) {
-    // Mevcut indexteki metni kullan
-    if (Array.isArray(item.texts) && item.texts.length > 0) {
-      item.text = item.texts[item.currentIndex];
-    }
-    typeElement(item, function() {
-      if (item.loop || (Array.isArray(item.texts) && item.texts.length > 1)) {
-        const delay = item.loopDelay || 1000;
-        // Input odaklanmışsa veya değer girilmişse döngüyü durdur
-        const shouldStop = item.isInput && (document.activeElement === item.el || (item.el.value && item.el.value.length > 0));
-        if (!shouldStop) {
-          // Sonraki metne geç
-          if (Array.isArray(item.texts) && item.texts.length > 1) {
-            item.currentIndex = (item.currentIndex + 1) % item.texts.length;
-          }
-          if (item.isInput) {
-            item.el.setAttribute('placeholder', '');
-          } else {
-            item.el.textContent = '';
-          }
-          setTimeout(function() { startTyping(item); }, delay);
-        }
-      }
-    });
-  }
-
-  
-
-    // simul grubunu aynı anda başlat
-  const simulItems = items.filter(i => i.sync === 'simul');
-  simulItems.forEach(i => startTyping(i));
-
-    // geri kalanları sırayla çalıştır
-    const seqItems = items.filter(i => i.sync !== 'simul');
-    function runSequence(index) {
-      if (index >= seqItems.length) return;
-      typeElement(seqItems[index], function() {
-        setTimeout(function() { runSequence(index + 1); }, 300);
-      });
-    }
-
-    if (seqItems.length) runSequence(0);
-  });
-</script>
 
 <?php require 'inc/footer.php'; ?>
