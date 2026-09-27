@@ -36,7 +36,7 @@ $(document).ready(function() {
             <div class="footerduzenle">
                 <div class="foooter">
                     <div class="footersol">
-                        <div class="footersollogo"> <a href="https://turkbil.net.tr" title=""> <img src="../asset/resimler/footerlogo.png" alt="Türkbil" style="
+                        <div class="footersollogo"> <a href="https://turkbil.net.tr" title=""> <img src="../asset/resimler/footerlogo.png" alt="Türkbil" loading="lazy" decoding="async" style="
     width: 170px;
 "> </a> </div>
                         <div class="footersolyazi"> <p>	36/A Çobançeşme Mah. Köprülü Sk.<br> Bahçelievler, İstanbul, TR <br> +90 (212) 514 514 0 </p> </div>
@@ -124,10 +124,7 @@ $(document).ready(function() {
 	
 </section>
 
-<script src="../asset/dist/wow.js"></script>
-<script>
-    new WOW().init();
-</script>  
+  
 
 
 </body>

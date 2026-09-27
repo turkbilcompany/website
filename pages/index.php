@@ -8,7 +8,7 @@ require 'inc/header.php';
     <section>
         <div class="yukari">
             <a href="#" onclick="yukari('top'); return false;" aria-label="Sayfanın başına dön">
-                <img src="../asset/resimler/yukari.png" alt="Yukarı çık">
+                <img src="../asset/resimler/yukari.png" loading="lazy" decoding="async" alt="Yukarı çık">
             </a>
         </div>
         <div class="genel">
@@ -226,5 +226,7 @@ require 'inc/header.php';
 
 
 
+
+<?php require 'inc/anasayfa-bolumler.php'; ?>
 
 <?php require 'inc/footer.php'; ?>
