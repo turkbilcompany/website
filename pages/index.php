@@ -227,4 +227,6 @@ require 'inc/header.php';
 
 
 
+<?php require 'inc/anasayfa-bolumler.php'; ?>
+
 <?php require 'inc/footer.php'; ?>
