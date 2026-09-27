@@ -26,6 +26,11 @@ $(function(){
 	$(".menukapat").click(function(){
 		$(".mobilmenu").hide('slow');
 	});
+	// Mobil menüde alt menüler dokunarak açılır/kapanır
+	$(".mobilmenum .mobilac").click(function(e){
+		e.preventDefault();
+		$(this).parent("li").toggleClass("acik");
+	});
 });
 
 $(function(){
@@ -35,15 +40,20 @@ $(function(){
           $(".yukari").css({
             "opacity":"1"
           });
+          $(".yukari a").css("pointer-events", "auto");
         } else{
             $(".yukari").css({
               "opacity":"0"
           });
+            $(".yukari a").css("pointer-events", "none");
         }
     });
 });
 
-function yukari(id){$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');}
+function yukari(id){
+    var hedef = $("#"+id);
+    $('html,body').animate({scrollTop: hedef.length ? hedef.offset().top : 0},'slow');
+}
 
 // USD → TL fiyat dönüşümü (domain fiyatları)
 (function(){

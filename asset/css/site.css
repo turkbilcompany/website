@@ -206,6 +206,53 @@ select:focus{
 	float: initial;
 	margin-left: 5px;
 }
+/* Mobil menüde alt menüler hover yerine dokunmayla (.acik) açılır */
+.mobilmenum .acilirmenu{
+	display: none;
+	opacity: 1;
+	visibility: visible;
+	transform: none;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 0;
+	margin-top: 10px;
+	padding: 4px 0;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: none;
+	border: none;
+	box-shadow: none;
+}
+.mobilmenum .acilirmenu li{
+	float: none;
+	display: block;
+	width: auto;
+	margin: 0;
+	padding: 10px 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.mobilmenum .acilirmenu li:last-child{
+	border-bottom: none;
+}
+.mobilmenum .acilirmenu li a{
+	color: #fff;
+	font-size: 15px;
+}
+.mobillogo img{
+	max-width: 170px;
+	height: auto;
+}
+.mobilmenum li.acik > .acilirmenu{
+	display: block;
+}
+.mobilmenum li.ac > a span svg{
+	transition: transform .2s;
+}
+.mobilmenum li.acik > a span svg{
+	transform: rotate(180deg);
+}
 .mobillogo{
 	float: left;
 	width: 100%;
@@ -2533,9 +2580,28 @@ input[type=checkbox] {
     transition: all 0.4s;
     z-index: 99;
     bottom: 55px;
+    pointer-events: none;
+}
+.yukari a{
+	display: inline-block;
+	pointer-events: none;
 }
 .yukari img{
 	width: 50px;
+}
+/* Owl Carousel görsellere width:100% verdiği için alan adı logoları esniyordu */
+.fiyatlar .owl-carousel .owl-item img{
+	width: auto;
+	flex: 0 0 auto;
+}
+.fiyatlar .owl-carousel{
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+.fiyatlar .owl-carousel li{
+	float: none;
+	width: 100%;
+	margin-left: 0;
 }
 @media(max-width: 1280px) and (min-width: 199px){
 	.duzenle{
@@ -2731,7 +2797,7 @@ input[type=checkbox] {
 		margin-left: 15px;
 		width: 92%;		
 	}
-	.desteksag{
+	.desteksag, .desteksag1, .desteksag2{
 		width: 89%;
 		margin-left: 17px;
 		margin-top: 38px;
@@ -2747,9 +2813,12 @@ input[type=checkbox] {
 		width: 100%;
 		margin-left: 1px;
 	}
-	.footersag{
+	.footersag, .footersag:last-child{
 		margin-top: 26px;
-		width: 39%;
+		width: 50%;
+	}
+	.fiyatlar .owl-carousel{
+		padding: 0 15px;
 	}
 	.footeryazim{
 		width: 100%;
@@ -3064,7 +3133,7 @@ input[type=checkbox] {
 		margin-left: 15px;
 		width: 46%;	
 	}
-	.desteksag{
+	.desteksag, .desteksag1, .desteksag2{
 		width: 46%;
 		margin-left: 17px;
 		margin-top: 38px;
@@ -3080,9 +3149,9 @@ input[type=checkbox] {
 		width: 100%;
 		margin-left: 1px;
 	}
-	.footersag{
+	.footersag, .footersag:last-child{
 		margin-top: 26px;
-		width: 39%;
+		width: 33%;
 	}
 	.footeryazim{
 		width: 100%;
