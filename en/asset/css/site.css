@@ -1,0 +1,3069 @@
+body{
+	font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+}
+input:focus{
+	outline: none;
+}
+select:focus{
+	outline: none;
+}
+.musteriformu{
+    position: fixed;
+    top: 470px;
+    left: -55px;
+    z-index: 9999999;
+    transform: rotate(-90deg);
+}
+.musteriformu a{
+    background: #4c5c75;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 11px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.owl-item{
+	float: left;
+	width: 30%;
+}
+.duzenle{
+	width: 1160px;
+	margin: 0 auto;
+	text-align: center;
+}
+.header{
+	float: left;
+	width: 100%;
+	background: linear-gradient(51deg, #c5263a,#cd5554);
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.headersol{
+	float: left;
+	width: 50%;
+}
+.headersolmenu{
+	float: left;
+	width: 100%;
+}
+.headersolmenu ul li{
+    float: left;
+    border-right: 1px solid #B1172A;
+    margin-right: 14px;
+    padding-right: 14px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+.headersolmenu ul li a{ 
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+.headersolmenu ul li svg{
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-right: 9px;
+}
+.headersolmenu ul li span{
+	float: left;
+	margin-top: 2px;
+}
+.headersolmenu ul li:last-child{
+	border: none;
+}
+.headersag{
+	float: right;
+	width: 50%;
+}
+.headersagmenu{
+	float: right;
+	margin-right: 47px;
+}
+.headersagmenu ul li{
+    float: right;
+    border-left: 1px solid #B1172A;
+    margin-left: 14px;
+    padding-left: 14px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    text-align: left;
+    position: relative;
+}
+.headersagmenu ul li a{ 
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.headersagmenu ul li:hover > a {
+    transform: scale(1.05);
+}
+.headersagmenu ul li svg{
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-right: 9px;
+}
+.headersagmenu ul li span{
+	float: left;
+	margin-top: 2px;
+}
+.headersagmenu ul li:last-child{
+	border: none;
+}
+.headersagmenu .dil{
+    background: #57b265;
+    padding: 7px;
+    position: absolute;
+    right: -51px;
+    top: -1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 2px solid #fff;
+}
+.headeraltduzenle{
+	width: 1160px;
+	margin: 0 auto;
+	text-align: center;
+}
+.headeralt{
+	float: left;
+	width: 100%;
+	background: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	border-image:linear-gradient(to right, #6BBFE4,#FFDD3F ,#EA4A92 ) 10;
+	position: relative;
+}
+.mobilbars{
+	position: absolute;
+	left: 17px;
+	top: 27px;
+	color: #C4162B;
+	font-size: 33px;
+	display: none;
+}
+.mobilmenu{
+	position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #c4162b;
+    z-index: 999999999999999;
+    display: none;
+}
+.mobilmenum{
+    float: left;
+    margin-top: 13px;
+    margin-left: 0px;
+    width: 100%;
+}
+.mobilmenum ul li{
+    float: left;
+    margin-right: 0px;
+    position: relative;
+    width: 97%;
+    margin-bottom: 11px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 14px;
+    padding-left: 13px;
+}
+.mobilmenum ul li a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+.mobilmenum ul li span{
+	float: initial;
+	margin-left: 5px;
+}
+.mobillogo{
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top: 17px;
+	padding-bottom: 17px;
+	border-bottom: 1px solid #fff;
+}
+.menukapat{
+	position: absolute;
+	right: 25px;
+	top: 23px;
+	color: #fff;
+	font-size: 30px;
+}
+.headeraltsol{
+	float: left;
+	width: 30%;
+}
+.logo{
+	float: left;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform;
+    position: relative;
+    overflow: hidden;
+}
+.logo:hover{
+    transform: scale(1.05);
+}
+.logo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to left, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.3) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    animation: shine 6s infinite;
+}
+
+@keyframes shine {
+    0% {
+        right: -100%;
+    }
+    30% {
+        right: 100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+.headeraltsag{
+	float: left;
+	width: 70%;
+}
+.headeraltsagmenu{
+	float: left;
+    margin-top: 13px;
+    margin-left: 15%;
+}
+.headeraltsagmenu ul li{
+    float: left;
+    margin-right: 34px;
+    position: relative;
+}
+.headeraltsagmenu ul li a{
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+.headeraltsagmenu ul li span{
+	float: right;
+	margin-left: 4px;
+	margin-top: -2px;
+}
+.acilirmenu{
+    position: absolute;
+    left: 0px;
+    background: rgba(177, 23, 42, 0.97);
+    border-radius: 5px;
+    z-index: 9;
+    top: 34px;
+    padding: 18px;
+    width: 311px;
+    padding-bottom: 6px;
+    padding-right: 0px;
+    display: none;
+}
+.acilirmenu li{
+    margin-right: 12px!important;
+    width: 46%;
+    text-align: left;
+    border-bottom: 1px solid #A4192A;
+    padding-bottom: 12px!important;
+    margin-bottom: 10px;
+}
+.acilirmenu li a{
+	color: #fff!important;
+    font-weight: 700!important;
+    font-size: 13px!important;
+    line-height: 16px;
+}
+.acilirmenu li svg{
+	float: right;
+	margin-top: 7px;
+}
+.musterigirisi{
+    float: right;
+    width: 20%;
+}
+.musterigirisi a {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 650;
+    color: #333;
+    padding: 12px 0;
+    border-radius: 4px;
+    z-index: 1;
+    background: linear-gradient(to right, #004b93, #e4002b, #f7931e, #00a651, #004b93); /* Türkbil renk paleti: Mavi, Kırmızı, Turuncu, Yeşil ve döngü için Mavi */
+    background-size: 200% 100%; /* Daha pürüzsüz akış için boyut ayarı */
+    animation: gradientFlow 8s linear infinite; /* Daha yavaş ve kesintisiz ahenkli akış */
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
+}
+.musterigirisi SVG{
+	margin-right: 4px;
+}
+.musterigirisimobil{
+    float: left;
+    width: 100%;
+    margin-top: 17px;
+    text-align: center;
+}
+.musterigirisimobil a{
+    display: inline-block;
+    width: 44%;
+    background: #fff;
+    border: 3px solid #C4162B;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #C4162B;
+    font-weight: 650;
+    padding: 13px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+.musterigirisimobil SVG{
+	margin-right: 4px;
+}
+.anaduzenle{
+	width: 1160px;
+	margin: 0 auto;
+	text-align: center;
+}
+.ana{
+	float: left;
+	width: 100%;
+	background: linear-gradient(51deg, #c5263a,#cd5554);
+	position: relative;
+}
+.musterifixed{
+    position: fixed;
+    left: -52px;
+    top: 50%;
+    z-index: 999999;
+    transform: rotate(270deg);
+}
+.musterifixed a{
+	background: #22ACEB;
+	border-radius: 0px 0px 5px 5px;
+	display: inline-block;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #fff;
+	padding: 13px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.anasol{
+	float: left;
+	width: 40%;
+}
+.anasolbaslik{
+	float: left;
+	width: 100%;
+	text-align: left;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 75px;
+}
+.anasolyazi{
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-top: 11px;
+}
+.anasolyazim{
+	float: left;
+	width: 100%;
+	font-size: 14px;
+	line-height: 25px;
+	text-align: left;
+	color: #fff;
+	margin-top: 40px;
+}
+.anasolbuton{
+	float: left;
+	width: 34%;
+	margin-top: 40px;
+}
+.anasolbuton a{ 
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #C4162B;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    transition: all .3s;
+}
+.anasolbuton a:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(196, 22, 43, 0.2);
+}
+.anasoldestek{
+    float: left;
+    width: 37%;
+    margin-top: 35px;
+}
+.anasoldestek a{ 
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.anasoldestek a svg{ 
+    height: 20px;
+    width: 26px;
+    float: left;
+    margin-left: 30px;
+}
+.anasoldestek a span{ 
+    float: left;
+    margin-left: 11px;
+    margin-top: 2px;
+}
+.anasag{
+	float: right;
+	width: 40%;
+}
+.anasag .anasagresim{
+	float: right;
+	width: 100%;
+	margin-right: -3px;
+	position: relative;
+}
+.anasagkisim{
+	position: absolute;
+	left: 0px;
+	bottom: 150px;
+	background: linear-gradient(104.5deg, rgba(196, 22, 43, 0.48) 8.7%, #C4162B 149.97%);
+	backdrop-filter: blur(4px);
+	border-radius: 0px 5px 5px 0px;
+	width: 42%;
+	padding: 23px;
+	padding-top: 21px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.anasagkisimbaslik{
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 15px;
+	align-items: center;
+	color: #fff;
+}
+.kisimmenu{
+	float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+.kisimmenu ul li{
+	display: inline-block;
+	margin-left: -8px;
+}
+.kisimmenu ul li img{
+	width: 33px!important;
+}
+.anasvg{
+	position: absolute;
+	left: -116px;
+	top: 47px;
+}
+.anasag .anasagresim img{
+	width: 150%;
+        position: relative;
+        right: 240px;
+}
+.anasvg img{
+	width: 45%!important;
+}
+.anasvg2{
+    position: absolute;
+    right: -90px;
+    bottom: 34px;
+    width: 32%;
+}
+.anasvg2 img{
+	width: 45%!important;
+}
+.fizikselduzenle{
+	width: 1160px;
+	margin: 0 auto;
+	text-align: center;
+}
+.fizikselscroll{
+    float: left;
+    width: 100%;
+    background: #f5f5f5;
+    position: relative;
+    padding-bottom: 0px;
+    padding-top: 34px;
+}
+.paketlerduzenle{
+	width: 1160px;
+	margin: 0 auto;
+	text-align: center;
+}
+.paketler{
+	float: left;
+	width: 100%;
+	background: #f5f5f5;
+	position: relative;
+	padding-bottom: 35px;
+}
+.paketsvg{
+    position: absolute;
+    left: 0px;
+    top: 74px;
+}
+.paketsvg svg{
+    width: 372px;
+    height: 329px;
+}
+.domain{
+	float: left;
+	width: 100.3%;
+	background: #fff;
+	margin-top: -15px;
+	padding-top: 23px;
+	border-radius: 5px;
+	padding-bottom: 30px;
+	z-index: 9;
+	position: relative;
+}
+.domainsol{
+    float: left;
+    width: 50%;
+    margin-left: 30px;
+}
+.domainsolyazi{
+	float: left;
+	width: 100%;
+	text-align: left;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+.domainsolyazi svg{
+	float: left;
+}
+.domainsolyazi span{
+    float: left;
+    margin-left: 15px;
+    margin-top: 1px;
+}
+.domainsag{
+	float: right;
+	margin-right: 30px;
+}
+.domainsag ul li{
+	float: left;
+	margin-left: 10px;
+}
+.domainform{
+	float: left;
+	width: 100%;
+}
+.domainforminput{
+    float: left;
+    width: 95%;
+    margin-left: 30px;
+    margin-top: 22px;
+    position: relative;
+}
+.domainforminput input{
+	width: 100%;
+	display: inline-block;
+	background: #FFFFFF;
+	border: 1px solid #F9F3F3;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 19px;
+	color: #999999;
+	padding: 23px;
+	padding-left: 27px;
+	padding-right: 0px;
+}
+.domainformbuton{
+	position: absolute;
+	right: 22px;
+	top: 15px;
+	width: 110px;
+}
+.domainformbuton button{
+    background: #C4162B;
+    border-radius: 5px;
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    padding: 11px;
+    transition: all .7s;
+}
+.domainformbuton span{
+	font-size: 15px;
+}
+.domainformbuton svg{
+	width: 15px;
+	float: left;
+	color: #fff;
+}
+.domainformbuton button:hover{
+	background: #fff;
+	color: #cd162b;
+	margin-top: -5px;
+}
+.domainformbuton button:hover svg{
+	color: #cd162b;
+}
+.fiyatlar{
+	float: left;
+	width: 100%;
+	margin-top: 55px;
+}
+.fiyatlar ul li{
+	float: left;
+	margin-left: 30px;
+}
+.fiyatlar ul li a{
+    background: #FFFFFF;
+    border: 1px solid #F9F3F3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    display: inline-block;
+    padding: 13px;
+}
+.fiyatlar ul li svg{
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+    margin-right: 9px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    float: left;
+    margin-left: 13px;
+    margin-top: 3%;
+}
+.fiyatlar ul li span{
+    float: left;
+    background: #FAFAFA;
+    border-radius: 5px;
+    color: #999999;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 17px;
+    display: inline-block;
+    margin-right: 19px;
+}
+.destekler{
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.destekpoly{
+	position: absolute;
+	right: -96px;
+	top: -114px;
+}
+.destekpoly2{
+	position: absolute;
+	left: -245px;
+	top: 116px;
+}
+.desteksol{
+	float: left;
+	width: 20%;
+	margin-top: 100px;
+	position: relative;
+}
+.desteksolsvg{
+	float: left;
+	width: 100%;
+	text-align: left;
+}
+.desteksolbaslik{
+	float: left;
+	width: 100%;
+	text-align: left;
+	color: #333;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 28px;	
+	margin-top: 11px;
+}
+.desteksolyazi{
+    float: left;
+    width: 100%;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+    margin-top: 10px;
+}
+.desteksolbuton{
+    float: left;
+    width: 68%;
+    text-align: left;
+    margin-top: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 3px #c52239;
+}
+.desteksolbuton a{
+    width: 100%;
+    display: inline-block;
+    background: none;
+    border: 1px solid #C4162B;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #C4162B;
+    text-align: center;
+    padding: 12px;
+    transition: all .7s;
+}
+.desteksolbuton a svg{
+    color: #C4162B;
+	margin-left: 3px;
+}
+.desteksolbuton a:hover{
+	background: #c4162b;
+	color: #fff;
+}
+.desteksolbuton a:hover svg{
+	color: #fFf;
+}
+.desteksag{
+	float: left;
+    width: 25.2%;
+    background: #f2c14b;
+    border-radius: 5px;
+    padding-top: 40px;
+    margin-top: 64px;
+    margin-left: 17px;
+    padding-bottom: 34px;
+    position: relative;
+    transition: all .7s;
+	box-shadow: 0px 0px 30px #f2c14b;
+}
+.desteksag1{
+	float: left;
+    width: 25.2%;
+    background: #5d7abc;
+    border-radius: 5px;
+    padding-top: 40px;
+    margin-top: 64px;
+    margin-left: 17px;
+    padding-bottom: 34px;
+    position: relative;
+    transition: all .7s;
+	box-shadow: 0px 0px 30px #5d7abc;
+}
+.desteksag2{
+	float: left;
+    width: 25.2%;
+    background: #33ab54; 
+    border-radius: 5px;
+    padding-top: 40px;
+    margin-top: 64px;
+    margin-left: 17px;
+    padding-bottom: 34px;
+    position: relative;
+    transition: all .7s;
+	box-shadow: 0px 0px 30px #33ab54;
+}
+.desteksagico{
+    background: #E9F6FB;
+    border-radius: 5px;
+    display: inline-block;
+    width: 28%;
+    padding: 9px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.desteksagbaslik{
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;	
+	margin-top: 32px;
+	z-index: 2;
+	position: relative;
+}
+.desteksagyazi{
+    float: left;
+    width: 84%;
+    text-align: center;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 10px;
+    z-index: 2;
+    position: relative;
+}
+.desteksag:hover .desteksagbaslik{
+	color: #fff;
+}
+.desteksag:hover .desteksagyazi{
+	color: #fff;
+}
+.desteksag:hover .desteksvg{
+	display: none;
+}
+.desteksvg{
+    position: absolute;
+    left: 0px;
+    top: 63px;
+    width: 100%;
+    z-index: 1;
+    color: #E9F6FB;
+}
+.desteksag:nth-child(3) .desteksagico{
+	background: #FFF9F2;
+}
+.desteksag:last-child .desteksagico{
+	background: #FEF6F9;
+}
+.desteksag:nth-child(3) .desteksvg{
+	color: #FFF9F2;
+}
+.desteksag:nth-child(4) .desteksvg{
+	color: #FEF6F9;
+}
+.footerduzenle{
+	width: 1160px;
+	margin: 0 auto;
+	text-align: center;
+}
+.footer{
+	float: left;
+	width: 100%;
+	background: #181c27;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: relative;
+}
+.foooter{
+	float: left;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    border-image: linear-gradient(to right, #6BBFE4 24.9%,#FFDD3F 44.59% ,#EA4A92 80.33%) 10;
+    padding-bottom: 30px;
+}
+.footersol{
+	float: left;
+	width: 33%;
+	margin-top: 46px;
+	position: relative;
+}
+.footersvg{
+    position: absolute;
+    left: -100px;
+    bottom: -150px;
+    opacity: 0.2;
+}
+.footersvg img{
+    width: 92%;
+    height: 320px;
+}
+.footersollogo{
+	float: left;
+	width: 100%;
+	text-align: left;
+	position: relative;
+}
+.footersolyazi{
+    float: left;
+    width: 74%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #fff;
+    margin-top: 14px;
+    position: relative;
+}
+.footersolmenu{
+	float: left;
+	width: 100%;
+	margin-top: 27px;
+	position: relative;
+}
+.footersolmenu ul li{
+    float: left;
+    margin-right: 17px;
+}
+.footersolmenu ul li a{
+    color: #4D565B;
+    background: #fff;
+    border-radius: 5px;
+    padding: 7px;
+    padding-top: 11px;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: all .7s;
+}
+.footersolmenu ul li a svg{
+    width: 22px;
+    height: 17px;
+}
+.footersolmenu ul li a:hover{
+	background: #8F989D;
+	color: #fff;
+}
+.footersag{
+	float: left;
+	width: 25%;
+}
+.footersag:last-child{
+	width: 15%;
+}
+.footersagmenu{
+	float: left;
+}
+.footersagmenu ul li{
+	font-size: 13px;
+	color: #fff;
+	width: 100%;
+	text-align: left;
+	margin-top: 12px;
+}
+.footersagmenu ul li a{ 
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #fff;
+}
+.footersagmenu ul li:first-child{
+	border-bottom: 1px solid #8F989D;
+	width: 24%;
+	padding-bottom: 26px;
+	margin-bottom: 25px;
+}
+.footeryazim{
+	float: left;
+	width: 50%;
+	text-align: left;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	margin-top: 30px;
+	position: relative;
+}
+.footerme{
+	float: right;
+	width: 50%;
+	margin-top: 30px;
+}
+.footerme ul li{
+    float: right;
+    margin-left: 23px;
+}
+.footerme ul li a{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;	
+}
+.genelolaraksol{
+	float: left;
+	width: 73%;
+}
+.iletisim{
+    float: left;
+    width: 100%;
+    background: #fff;
+    margin-top: 47px;
+    padding-top: 23px;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+.iletisim:nth-child(2){
+	margin-top: 30px;
+}
+.iletisimim{
+	float: left;
+	width: 29.5%;
+	background: #E8F4FA;
+	border-radius: 5px;
+	margin-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.iletisimim:nth-child(2){
+	background: #F7FBF6;;
+}
+.iletisimim:nth-child(3){
+	background: #F3F6FD;;
+}
+.iletisimim:nth-child(2) .iletisimico svg{
+	background: #EEF6EC;
+}
+.iletisimim:nth-child(3) .iletisimico svg{
+	background: #E6ECFA;
+}
+.iletisimico{
+	float: left;
+	width: 30%;
+}
+.iletisimico svg{
+    background: #DBEDF7;
+    border-radius: 5px;
+    padding: 7px;
+    padding-top: 11px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.iletisimbilgi{
+	float: left;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	color: #999;
+	width: 59%;
+	text-align: left;
+	margin-top: 6px;
+}
+.iletisimtel{
+	float: left;
+	width: 59%;
+	text-align: left;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;	
+}
+.iletisimborder{
+	float: left;
+	width: 94.3%;
+	border-bottom: 3px solid #ccc;
+	border-image: linear-gradient(to right, #6BBFE4,#FFDD3F ,#EA4A92 ) 10;
+	margin-left: 25px;
+	margin-top: 28px;
+}
+.adres{
+	float: left;
+	width: 100%;
+}
+.adressol{
+    float: left;
+    width: 45.5%;
+    margin-left: 26px;
+    margin-top: 26px;
+}
+.adressolbaslik{
+	float: left;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333;
+	width: 100%;
+	text-align: left;	
+    border-bottom: 1px solid #F9F3F3;
+    padding-bottom: 25px;
+}
+.adressolbaslik svg{
+	float: left;
+	margin-right: 11px;
+}
+.adressolyazi{
+	float: left;
+	width: 100%;
+	text-align: left;
+	font-size: 13px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333;
+	margin-top: 20px;
+}
+.iletisimsol{
+    float: left;
+    width: 50%;
+    margin-left: 30px;
+}
+.iletisimsolyazi{
+	float: left;
+	width: 100%;
+	text-align: left;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+.iletisimsolyazi svg{
+	float: left;
+}
+.iletisimsolyazi span{
+    float: left;
+    margin-left: 15px;
+    margin-top: 1px;
+}
+.iletisimsag{
+	float: right;
+	margin-right: 30px;
+}
+.iletisimsag ul li{
+	float: left;
+	margin-left: 10px;
+}
+.iletisimduzborder{
+    float: left;
+    width: 92.7%;
+    border-bottom: 1px solid #F9F3F3;
+    margin-left: 31px;
+    margin-top: 31px;
+}
+.iletisimform{
+    float: left;
+    width: 44.2%;
+    margin-left: 33px;
+    margin-top: 25px
+}
+.iletisimformyazi{
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: #333;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+.iletisimforminput{
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-top: 17px;
+}
+.iletisimforminput input{
+    background: #FAFAFA;
+    border: 1px solid #F9F3F3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;	
+}
+.iletisimforminput input::placeholder{
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;		
+}
+.iletisimformuzun{
+    float: left;
+    width: 92%;
+    margin-left: 33px;
+    margin-top: 25px
+}
+.iletisimformyazi2{
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: #333;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+.iletisimforminput2{
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-top: 17px;
+}
+.iletisimforminput2 input{
+    background: #FAFAFA;
+    border: 1px solid #F9F3F3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;	
+}
+.iletisimforminput2 input::placeholder{
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;		
+}
+.iletisimformmesaj{
+    float: left;
+    width: 92%;
+    margin-left: 33px;
+    margin-top: 25px
+}
+.iletisimformyazi3{
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: #333;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+.iletisimforminput3{
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-top: 17px;
+}
+.iletisimforminput3 input{
+    background: #FAFAFA;
+    border: 1px solid #F9F3F3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 60px;	
+}
+.iletisimforminput3 input::placeholder{
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;		
+}
+.iletisimbutonlar{
+    float: left;
+    width: 100%;
+    background: #F4F4F4;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.iletisimbuton{
+	float: left;
+	width: 12%;
+	margin-left: 35px;
+}
+.iletisimbuton a{
+	background: #8F989D;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 18px;
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	padding: 13px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.iletisimasilbuton{
+	float: right;
+	width: 12%;
+	margin-right: 35px;
+}
+.iletisimasilbuton button{
+	background: #C4162B;;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 18px;
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	padding: 13px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border: none;
+	cursor: pointer;
+}
+.iletisimsagbar{
+	float: right;
+	width: 25%;
+	background: #fff;
+	border-radius: 10px;
+	margin-top: 46px;
+}
+.iletisimsagbarmenu{
+	float: left;
+	width: 100%;
+	text-align: left;
+}
+.iletisimsagbarmenu ul li{
+	float: left;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 32px;
+    padding-top: 31px;
+}
+.iletisimsagbarmenu ul li a{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #333;
+    padding-left: 16px;
+    border-left: 4px solid #C4162B;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.sunucuduzenle{
+	width: 1160px;
+	margin: 0 auto;
+	text-align: center;
+}
+.sunucu{
+	float: left;
+	width: 100%;
+	background: url('../resimler/bg2.png');
+	position: relative;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sunucubg{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sunucuico{
+	float: left;
+	width: 100%;
+	margin-top: 55px;
+}
+.sunucubaslik{
+	float: left;
+	width: 100%;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 25px;
+	color: #fff;
+	margin-top: 7px;	
+}
+.tabmenu{
+	float: left;
+	width: 100%;
+	background: none;
+	margin-top: 29px;
+}
+.tabmenu ul{
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 100px;
+    text-align: center;
+    width: 10%;
+    display: inline-block;
+    padding: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.tabmenu ul li{
+	display: inline-block;
+	width: 27%;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 19px;
+	color: #fff;
+	cursor: pointer;
+    padding: 11px;	
+    transition: all.7s;
+}
+.tabmenu ul li:hover{
+    background: #FFEE9F;
+    border-radius: 100px;
+    color: #C4162B;
+}
+.tabmenu ul li.aktif{
+    background: #FFEE9F;
+    border-radius: 100px;
+    color: #C4162B;
+}
+.tab_icerik{
+	float: left;
+	width: 100%;
+	margin-top: -35px;
+}
+.tab_icerikim{
+    float: left;
+    width: 22%;
+    border: 2px solid #b1172a;
+    border-radius: 15px;
+    margin-right: 41px;
+}
+.tab_icerikim:last-child{
+	margin-right: 0px;
+}
+.tabbaslik{
+	float: left;
+	width: 100%;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 21px;	
+	background: linear-gradient(51deg, #c5263a,#cd5554);
+	border-radius: 10px 10px 0px 0px;
+	color: #fff;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.tabmenum{
+	float: left;
+	width: 100%;
+}
+.tabmenum ul li{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #333;
+    background: #E8F5F3;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    position: relative;
+}
+.tabmenum ul li:nth-child(2n){
+	background: #fff;
+}
+.tabmenum svg{
+    display: inline-block;
+    position: absolute;
+    margin-left: 8px;
+}
+.tabmenufiyat{
+	float: left;
+    width: 100%;
+    text-align: center;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 38px;
+	color: #C4162B;    	
+	background: #fff;
+	border-top: 1px solid #F9F3F3;
+	border-bottom: 1px solid #F9F3F3;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.tabmenugri{
+	float: left;
+    width: 100%;
+    text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+	line-height: 38px;
+	color: #656565;    	
+	background: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.tabmenufiyat span{
+	float: left;
+	width: 100%;
+	color: #999;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;	
+}
+.tabmenubuton{
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+.tabmenubuton a{
+    width: 85%;
+    display: inline-block;
+    background: linear-gradient(51deg, #c5263a,#cd5554);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    color: #fff;
+    padding-top: 14px;
+    padding-bottom: 14px;	
+}
+.tabmenubuton svg{
+	width: 34px;
+}
+.sunucum{
+	float: left;
+	width: 100%;
+	background: url('../resimler/fizikselbg.png');
+	position: relative;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sunucumico{
+	float: left;
+	width: 100%;
+	margin-top: 110px;	
+}
+.sunucumbaslik{
+	float: left;
+	width: 100%;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 25px;
+	color: #fff;
+	margin-top: 10px;	
+}
+.ozelteklif{
+	float: left;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+.ozelteklif img{
+	width: 100%;
+	height: 207px;
+	border-radius: 10px;
+}
+.ozelteklifbg{
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	background: linear-gradient(90.62deg, #4e62af 34.27%, rgba(249, 173, 91, 0) 100.46%);
+	border-radius: 10px;
+}
+.ozelteklifbgsol{
+    float: left;
+    width: 70%;
+    margin-top: 67px;
+}
+.ozelteklifbgbaslik{
+	float: left;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 28px;
+    margin-left: 38px;	
+}
+.ozelteklifyazi{
+    float: left;
+    width: 89%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 38px;
+    line-height: 21px;
+    margin-top: 11px;
+}
+.ozelteklifsag{
+	float: right;
+	width: 20%;
+}
+.ozelteklifsagbuton{
+	float: right;
+	margin-right: 38px;
+	width: 100%;
+	margin-top: 79px;
+}
+.ozelteklifsagbuton a{
+    background: #F9AD5B;
+    border-radius: 5px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    color: #fff;
+    padding: 13px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.turkwhy{
+	float: left;
+	width: 100%;
+}
+.turkwhyico{
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+}
+.turkwhybaslik{
+	float: left;
+	width: 100%;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 28px;	
+	color: #333;
+	margin-top: 15px;	
+}
+.turkwhysvg{
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+}
+.turkwhyyazi{
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: #999;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 15px;	
+}
+.yorum{
+	float: left;
+	width: 100%;
+}
+.yorumsol{
+	float: left;
+	width: 23%;
+}
+.yorumsolresim{
+	float: left;
+	margin-top: 50px;
+	position: relative;
+}
+.yorumsolresim img{
+	border-radius: 100px;
+	z-index: 9;
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+.yorumsagborder{
+    position: absolute;
+    right: -32px;
+    top: 89px;
+    background: #6CC0E5;
+    border-radius: 5px 0px 0px 5px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 5px;
+    height: 25px;
+}
+.yorumsolbg{
+    position: absolute;
+    left: -9px;
+    top: 0px;
+    width: 200px;
+    height: 200px;
+    background: rgba(108, 192, 229, 0.5);
+    border-radius: 500px;
+    z-index: 1;
+}
+.yorumsolbg2{
+    position: absolute;
+    left: -18px;
+    top: 0px;
+    width: 200px;
+    height: 200px;
+	background: rgba(108, 192, 229, 0.3);
+    border-radius: 500px;
+    z-index: 1;
+}
+.yorumsag{
+	float: left;
+	width: 77%;
+}
+.yorumsagbaslik{
+	float: left;
+	width: 100%;
+	text-align: left;
+	color: #333;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	margin-top: 104px;
+}
+.yorumsolbaslik{
+	float: right;
+	width: 100%;
+	text-align: right;
+	color: #333;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	margin-top: 104px;
+}
+.yorumsagyazi{
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+.yorumsolyazi{
+    float: right;
+    width: 100%;
+    text-align: right;
+    color: #333;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+.yorum:nth-child(2n) .yorumsagbaslik{
+	margin-top: 88px;
+}
+.yorum:nth-child(2n) .yorumsol{
+	float: right;
+}
+.yorum:nth-child(2n) .yorumsolresim{
+	float: right;
+}
+.yorum:nth-child(2n) .yorumsagborder{
+	left: -32px;
+	right: 0px;
+	border-radius: 0px 5px 5px 0px;
+	background: #F9AD5B;
+}
+.yorum:nth-child(2n) .yorumsolbg{
+    right: -9px;
+    left: inherit;
+	background: rgba(249, 173, 91, 0.3);
+}
+.yorum:nth-child(2n) .yorumsolbg2{
+    right: -17px;
+    left: inherit;
+	background: rgba(249, 173, 91, 0.5);
+}
+.yorum:nth-child(3) .yorumsagborder{
+	background: #EB4B93;;
+}
+.yorum:nth-child(3) .yorumsolbg{
+	background: rgba(235, 75, 147, 0.5);
+}
+.yorum:nth-child(3) .yorumsolbg2{
+	background: rgba(235, 75, 147, 0.3);
+}
+.sorupaket{
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.sorupaketic{
+	float: left;
+	width: 49%;
+	background: rgba(103, 115, 221, 0.07);
+	border: 2px solid #6773DD;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	position: relative;
+	margin-top: 25px;
+	margin-right: 23px;
+}
+.sorupaketbaslik{
+	float: left;
+	width: 94%;
+	text-align: left;
+	color: #0000FF;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 23px;	
+	margin-left: 17px;
+}
+.sorupaketyazi{
+	float: left;
+	width: 94%;
+	text-align: left;
+	color: #333;
+	font-weight: 400;
+	font-size: 13px;
+	margin-left: 17px;
+	line-height: 25px;	
+	margin-top: 7px;
+}
+.sorupaketsvg{
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	background: #6773DD;
+	border-radius: 0px 10px;
+	width: 45px;
+	padding: 8px;
+	padding-left: 0px;
+	padding-right: 0px;	
+}
+.sorupaketic:nth-child(2n){
+	margin-right: 0px;
+}
+.sorupaketic:nth-child(2){
+	background: rgba(58, 217, 125, 0.07);
+	border-color: #3AD97D;
+}
+.sorupaketic:nth-child(2) .sorupaketsvg{
+	background: #3AD97D;
+}
+.sorupaketic:nth-child(3){
+	background: rgba(220, 147, 231, 0.07);
+	border-color: #DC93E7;;
+}
+.sorupaketic:nth-child(3) .sorupaketsvg{
+	background: #DC93E7;;
+}
+.sorupaketic:nth-child(4){
+	background: rgba(215, 169, 51, 0.07);
+	border-color: #D7A933;;
+}
+.sorupaketic:nth-child(4) .sorupaketsvg{
+	background: #D7A933;;
+}
+.sorupaketic:nth-child(5){
+	background: rgba(157, 72, 161, 0.07);
+	border-color: #9D48A1;
+}
+.sorupaketic:nth-child(5) .sorupaketsvg{
+	background: #9D48A1;
+}
+.sorupaketic:nth-child(6){
+	background: rgba(155, 135, 16, 0.07);
+	border-color: #9B8710;;
+}
+.sorupaketic:nth-child(6) .sorupaketsvg{
+	background: #9B8710;
+}
+.fiziksel{
+    float: left;
+    width: 100%;
+    margin-top: -68px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+.fizikselsollogo{
+    float: left;
+    width: 14%;
+    background: #FFFFFF;
+    border-radius: 10px 0px 0px 0px;
+    padding: 30px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.fizikselsollogo img{
+	width: 66%;
+}
+.fizikselsag{
+    float: left;
+    width: 86%;
+    background: linear-gradient(51deg, #c5263a,#cd5554);
+    border-radius: 0px 10px 0px 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.fizikselsagmenu{
+	float: left;
+	width: 86%;
+}
+.fizikselsagmenu ul li{
+	color: #fff;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 19px;
+	display: inline-block;
+	width: 18%;
+}
+.fizikselelipse{
+	float: right;
+	margin-right: 34px;
+}
+.fizikselelipse ul li{
+	float: left;
+	margin-left: 9px;
+}
+.fizikselelipse ul li:first-child{
+	color: rgba(255, 255, 255, 0.2);
+}
+.fizikselelipse ul li:nth-child(2){
+	color: rgba(255, 255, 255, 0.5);	
+}
+.fizikselelipse ul li:nth-child(3){
+	color: rgba(255, 255, 255, 0.8);
+}
+.fizikselmenu{
+	float: left;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+.fizikselmenusol{
+	float: left;
+	width: 14%;
+	background: linear-gradient(51deg, #c5263a,#cd5554);
+	padding: 35px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+	color: #fff;
+}
+.fizikselmenusag{
+    float: left;
+    width: 86%;
+    background: #fff;
+    padding-top: 34px;
+    padding-bottom: 28px;
+}
+.fizikselmenusag2{
+	float: left;
+	width: 86%;
+}
+.fizikselmenusag2 ul li{
+    color: #333;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    display: inline-block;
+    width: 18%;
+}
+.fizikselmenubuton{
+    float: right;
+    width: 10%;
+    margin-right: 34px;
+    margin-top: -12px;
+}
+.fizikselmenubuton a{
+    width: 100%;
+    display: inline-block;
+    background: linear-gradient(51deg, #c5263a,#cd5554);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    color: #fff;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: all .7s;
+}
+.fizikselmenu:nth-child(2n) .fizikselmenusag{
+	background: #E8F5F3;
+}
+.fizikselmenubuton a:hover{
+	background: #fff;
+	color: #C4162B;
+}
+.fizikselpoly{
+	position: absolute;
+	right: -156px;
+	top: 104px;
+	z-index: 1;
+}
+.fizikselpoly2{
+    position: absolute;
+    left: -202px;
+    bottom: -193px;
+}
+.iletisimbutonn{
+	float: left;
+	width: 8%;
+	margin-left: 35px;
+}
+.iletisimbutonn a{
+	background: #8F989D;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 18px;
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	padding: 11px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.iletisimbutonn2{
+	float: right;
+	width: 8%;
+	margin-right: 35px;
+}
+.iletisimbutonn2 a{
+	background: #C4162B;;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 18px;
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	padding: 11px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border: none;
+	cursor: pointer;
+}
+.iletisimbutonn2 button{
+    background: #C4162B;;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    padding: 11px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
+    cursor: pointer;
+}
+.iletisimform2{
+    float: left;
+    width: 45.7%;
+    margin-left: 33px;
+    margin-top: 25px
+}
+.iletisimform3{
+    float: left;
+    width: 94%;
+    margin-left: 33px;
+    margin-top: 25px
+}
+.iletisimformyazi10{
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: #333;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+.iletisimforminput10{
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-top: 17px;
+    position: relative;
+}
+.iletisimforminput10 input{
+    background: #FAFAFA;
+    border: 1px solid #F9F3F3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;	
+}
+.iletisimforminput10 input::placeholder{
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;		
+}
+.iletisimforminput10 select{
+    background: #FAFAFA;
+    border: 1px solid #F9F3F3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;	
+	-webkit-appearance: none;
+	color: #999;
+}
+.iletisimforminput10 select::placeholder{
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;		
+}
+.iletisimformuzun10{
+    float: left;
+    width: 92%;
+    margin-left: 33px;
+    margin-top: 25px
+}
+.iletisimok{
+    position: absolute;
+    right: 16px;
+    top: 14px;
+}
+.kayitformbilgi{
+	float: left;
+    width: 93%;
+    text-align: left;
+    color: #333;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    background: #F4F4F4;
+    border-radius: 5px;
+    margin-left: 31px;
+    margin-top: 30px;
+    padding: 17px;
+    padding-left: 19px;
+    padding-right: 0px;
+}
+.kayitformop{
+    float: left;
+    width: 210px;
+    background: #FFFFFF;
+    border: 1px solid #F9F3F3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 31px;
+    margin-top: 32px;
+    padding: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.kayitformop input{
+	float: left;
+	margin-left: 18px;
+}
+.kayitformop span{
+	float: left;
+	margin-left: 10px;
+}
+.kayitformop font{
+    font-size: 14px;
+    line-height: 16px;
+    color: #333;
+    font-weight: 600;
+    float: left;
+    margin-left: 11px;
+    margin-top: 2px;
+}	
+.kayitformop svg{
+	color: #333;
+}
+.iletisimform11{
+    float: left;
+    width: 100%;
+    margin-left: 33px;
+    margin-top: 25px
+}
+.iletisimformyazi11{
+    float: left;
+    width: 110%;
+    text-align: left;
+    color: #333;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+.iletisimforminput11{
+    float: left;
+    width: 94%;
+    text-align: left;
+    margin-top: 17px;
+    position: relative;
+}
+.iletisimforminput11 input{
+    background: #FAFAFA;
+    border: 1px solid #F9F3F3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;	
+}
+.iletisimforminput11 input::placeholder{
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;		
+}
+.iletisimformcheck{
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.iletisimformcheck input{
+	float: left;
+}
+/*
+.iletisimformcheck span{
+	float: left;
+	color: #333;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	margin-left: 10px;	
+}
+*/
+.main {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+input[type=checkbox] {
+    visibility: hidden;
+}
+.geekmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #FAFAFA;
+	border: 1px solid #F9F3F3;
+	box-sizing: border-box;
+	border-radius: 5px;    
+}
+.main:hover input ~ .geekmark {
+	background: #C4162B;
+}
+.main input:active ~ .geekmark {
+	background: #C4162B;
+}
+.main input:checked ~ .geekmark {
+	background: #C4162B;
+}
+.geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.main input:checked ~ .geekmark:after {
+    display: block;
+}
+.main .geekmark:after {
+	left: 10px;
+    bottom: 10px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.checkyazi{
+	float: left;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333;
+    margin-top: 6px;
+}
+.yukari{
+    float: right;
+    position: fixed;
+    text-align: right;
+    width: 99%;
+    margin-top: 0px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.4s;
+    z-index: 99;
+    bottom: 25px;
+}
+.yukari img{
+	width: 50px;
+}
+@media(max-width: 1280px) and (min-width: 199px){
+	.duzenle{
+		width: 100%;
+	}
+	.headeraltduzenle{
+		width: 100%;
+	}	
+	.anaduzenle{
+		width: 100%;
+	}
+	.paketlerduzenle{
+		width: 100%;
+	}
+	.footerduzenle{
+		width: 100%;
+	}
+}
+@media(max-width: 500px) and (min-width: 199px){
+    .musteriformu{
+        display: none;
+    }
+    .fiziksel{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .fizikselscroll{
+        overflow-x: scroll;
+        overflow-y: hidden;        
+    }
+	.acilirmenu{
+	    padding-bottom: 0px;
+	    padding-top: 11px;
+	    padding-right: 0px;
+	    width: 103%;
+	    position: relative;
+	    float: left;
+	    top: 14px;
+	    padding-left: 0px;
+	    left: -13px;		
+	}
+	.acilirmenu li svg{
+		display: none;
+	}	
+	.acilirmenu li:last-child{
+		border: none;
+	}
+	.anasagkisim{
+		width: 52%;
+		bottom: 97px;
+	}
+	.fizikselpoly{
+		display: none;
+	}
+	.fizikselelipse{
+		display: none;
+	}
+	.yorum:nth-child(2n) .yorumsol {
+	    float: left;
+	}
+	.yorum:nth-child(2n) .yorumsolresim {
+	    float: left;
+	    margin-left: 16px;
+	}	
+	.headersolmenu ul li{
+	    margin-right: 0px;
+	    padding-right: 0px;
+	    border: none;
+	    margin-left: 8px;
+	}	
+	.headersagmenu ul li{
+	    padding-right: 0px;
+	    border: none;
+	    margin-left: 15px;
+	    float: left;
+	    margin-right: 54px;
+	    padding-left: 0px;
+	}		
+	.headersag{
+	    float: left;
+	    width: 100%;
+	    margin-top: 14px;		
+	}
+	.headersagmenu{
+		float: left;
+		margin-right: 0px;		
+	}
+	.mobilbars{
+		display: block;
+	}
+	.header{
+		display: none;
+	}
+	.headeraltsol{
+		width: 100%;
+	}
+	.logo{
+		width: 100%;
+	}
+	.headeraltsagmenu{
+		display: none;
+	}
+	.musterigirisi{
+		display: none;
+	}
+	.anasol{
+	    width: 93%;
+	    margin-left: 13px;		
+	}
+	.anasolbaslik{
+		font-size: 30px;
+	}
+	.anasolyazi{
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.anasolyazim{
+		margin-top: 14px;
+	}
+	.anasolbuton{
+		width: 38%;
+	}
+	.anasolbuton a{
+		font-size: 14px;
+	}
+	.anasoldestek{
+		width: 50%;
+	}
+	.anasag{
+		float: left;
+		width: 93%;
+		margin-left: 10px;
+		margin-top: 16px;		
+	}
+	.ana{
+		padding-bottom: 40px;
+	}
+	.anasvg{
+		display: none;
+	}
+	.anasvg2{
+		display: none;
+	}
+	.domain{
+		width: 93%;
+		margin-left: 10px;
+	}
+	.domainsol{
+		width: 85%;
+	}
+	.domainsolyazi{
+		font-size: 13px;
+	}
+	.domainsolyazi span{
+		margin-top: 3px;
+	}
+	.domainsag{
+		display: none;
+	}
+	.domainforminput{
+		width: 87%;
+	}
+	.domainformbuton{
+		width: 12%;
+		right: 10px;
+	}
+	.domainformbuton span{
+		display: none;
+	}
+	.paketsvg{
+		display: none;
+	}
+	.fiyatlar ul li{
+	    margin-left: 30px;
+	    width: 87%;
+	    margin-bottom: 17px;		
+	}
+	.fiyatlar ul li img{
+		border: none;
+		padding-bottom: initial;
+		float: initial;
+	}
+	.fiyatlar ul li span{
+		float: initial;
+	}
+	.destekpoly{
+		display: none;
+	}
+	.destekpoly2{
+		display: none;
+	}
+	.desteksol{
+		margin-left: 15px;
+		width: 92%;		
+	}
+	.desteksag{
+		width: 89%;
+		margin-left: 17px;
+		margin-top: 38px;
+	}
+	.footerduzenle{
+		width: 90%;
+		margin-left: 12px;
+	}
+	.footersvg{
+		display: none;
+	}
+	.footersol{
+		width: 100%;
+		margin-left: 1px;
+	}
+	.footersag{
+		margin-top: 26px;
+		width: 39%;
+	}
+	.footeryazim{
+		width: 100%;
+		margin-top: 25px;
+		font-size: 13px;
+	}
+	.footerme{
+	    float: left;
+	    width: 100%;
+	    margin-top: 30px;		
+	}
+	.footerme ul li{
+		float: left;
+		margin-left: 0px;
+		text-align: left;
+		margin-right: 11px;
+	}
+	.genelolaraksol{
+		width: 93%;
+		margin-left: 10px;
+	}
+	.iletisimim{
+	    margin-bottom: 18px;
+	    float: left;
+	    width: 90%;		
+	}	
+	.iletisimborder{
+		width: 90%;
+	}
+	.adressol{
+		width: 90%;
+	}
+	.iletisimform{
+		width: 87%;
+	}
+	.iletisimformuzun{
+		width: 87%;
+	}
+	.iletisimforminput3{
+		width: 94%;
+	}
+	.iletisimbuton{
+		width: 25%;
+	}
+	.iletisimasilbuton{
+	    width: 25%;
+	    margin-right: 17px		
+	}
+	.iletisimsagbar{
+		margin-top: 46px;
+		float: left;
+		margin-left: 16px;
+		width: 91%;		
+	}
+	.tabmenu ul{
+		width: 43%;
+	}
+	.tab_icerik{
+		width: 94%;
+		margin-left: 13px;
+	}
+	.tab_icerikim{
+		margin-right: 0px;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.ozelteklif{
+		display: none;
+	}
+	.yorumsol{
+		width: 100%;
+	}
+	.yorumsolresim{
+		margin-left: 33px;
+		margin-top: 38px;
+	}
+	.yorumsag{
+		float: left;
+		width: 94%;
+		margin-left: 13px;
+	}
+	.yorumsagbaslik{
+		margin-top: 27px!important;
+	}
+	.yorumsagborder{
+		display: none;
+	}
+	.sorupaketic{
+		margin-left: 13px;
+		margin-right: 0px;
+		width: 93%;		
+	}
+	/**/
+	.iletisim{
+		width: 95%;
+	}
+	.iletisimsag{
+		display: none;
+	}
+	.iletisimsol{
+		width: 91%;
+		margin-left: 16px;
+	}
+	.iletisimduzborder{
+		margin-left: 19px;
+		width: 89%!important;
+	}
+	.kayitformbilgi{
+		width: 84%;
+		text-align: center;
+		padding-left: 7px;
+		padding-right: 7px;
+		margin-left: 21px;
+	}
+	.iletisimform2{
+		width: 87%;
+		margin-left: 22px;
+	}
+	.iletisimform11{
+		width: 88%;
+		margin-left: 21px;
+		margin-top: 25px;		
+	}
+	.iletisimformyazi11{
+		width: 100%;
+	}
+	.iletisimforminput11{
+		width: 100%;
+	}
+	.iletisimforminput11 input{
+		width: 100%;
+	}
+	.iletisimformcheck{
+		margin-bottom: 28px;
+		width: 100%;
+	}
+	.checkyazi{
+		font-size: 12px;
+	}
+	.geekmark{
+		top: 6px;
+	}
+	.iletisimbutonn{
+		width: 22%;
+		margin-left: 23px;
+	}
+	.iletisimbutonlar{
+		width: 95%;
+	}
+	.iletisimbutonn2{
+	    width: 22%;
+	    margin-right: 25px;		
+	}
+}	
+@media (min-width:501px) and (max-width: 900px){
+    .fiziksel{
+        margin-top: -20px;
+        margin-left: 0px;
+    }
+    .fizikselscroll{
+        overflow-x: scroll;
+        overflow-y: hidden;        
+    }    
+	.anasagkisim{
+		display: none;
+	}
+	.acilirmenu{
+	    padding-bottom: 0px;
+	    padding-top: 11px;
+	    padding-right: 0px;
+	    width: 103%;
+	    position: relative;
+	    float: left;
+	    top: 14px;
+	    padding-left: 0px;
+	    left: -13px;		
+	}
+	.acilirmenu li svg{
+		display: none;
+	}	
+	.acilirmenu li:last-child{
+		border: none;
+	}
+	.headersolmenu{
+		width: 58%;
+		margin-left: 10px;
+	}
+	.headersag{
+		width: 36%;
+		margin-right: 16px;		
+	}
+	.mobilmenum ul li{
+		width: 99%;
+	}
+	.mobilbars{
+		display: block;
+	}	
+	.iletisim{
+		width: 96%;
+	}
+	.iletisimform2{
+		width: 44.7%;
+	}
+	.iletisimbutonlar{
+		width: 96%;
+	}
+	.header{
+		display: none;
+	}
+	.headeraltsol{
+		width: 100%;
+	}
+	.logo{
+		width: 100%;
+	}
+	.headeraltsagmenu{
+		display: none;
+	}
+	.musterigirisi{
+		display: none;
+	}
+	.anasol{
+		width: 45%;
+		margin-left: 13px;	
+	}
+	.anasolbaslik{
+		font-size: 30px;
+	}
+	.anasolyazi{
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.anasolyazim{
+		margin-top: 14px;
+	}
+	.anasolbuton{
+		width: 38%;
+	}
+	.anasolbuton a{
+		font-size: 14px;
+	}
+	.anasoldestek{
+		width: 50%;
+	}
+	.anasag{
+	    float: left;
+	    width: 41%;
+	    margin-left: -2px;
+	    margin-top: 16px;	
+	}
+	.ana{
+		padding-bottom: 40px;
+	}
+	.anasvg{
+		display: none;
+	}
+	.anasvg2{
+		display: none;
+	}
+	.domain{
+		width: 93%;
+		margin-left: 10px;
+	}
+	.domainsol{
+		width: 85%;
+	}
+	.domainsolyazi{
+		font-size: 13px;
+	}
+	.domainsolyazi span{
+		margin-top: 3px;
+	}
+	.domainsag{
+		display: none;
+	}
+	.domainforminput{
+		width: 93%;
+	}
+	.domainformbuton button{
+		width: 39px;
+	}
+	.domainformbuton{
+		width: 12%;
+		right: 10px;
+	}
+	.domainformbuton span{
+		display: none;
+	}
+	.paketsvg{
+		display: none;
+	}
+	.fiyatlar ul li{
+	    margin-left: 30px;
+	    width: initial;
+	    margin-bottom: 17px;		
+	}
+	.fiyatlar ul li img{
+		border: none;
+		padding-bottom: initial;
+		float: initial;
+	}
+	.fiyatlar ul li span{
+		float: initial;
+	}
+	.destekpoly{
+		display: none;
+	}
+	.destekpoly2{
+		display: none;
+	}
+	.desteksol{
+		margin-left: 15px;
+		width: 46%;	
+	}
+	.desteksag{
+		width: 46%;
+		margin-left: 17px;
+		margin-top: 38px;
+	}
+	.footerduzenle{
+		width: 90%;
+		margin-left: 12px;
+	}
+	.footersvg{
+		display: none;
+	}
+	.footersol{
+		width: 100%;
+		margin-left: 1px;
+	}
+	.footersag{
+		margin-top: 26px;
+		width: 39%;
+	}
+	.footeryazim{
+		width: 100%;
+		margin-top: 25px;
+		font-size: 13px;
+	}
+	.footerme{
+	    float: left;
+	    width: 100%;
+	    margin-top: 30px;		
+	}
+	.footerme ul li{
+		float: left;
+		margin-left: 0px;
+		text-align: left;
+		margin-right: 11px;
+	}
+	.genelolaraksol{
+		width: 93%;
+		margin-left: 10px;
+	}
+	.iletisimim{
+	    margin-bottom: 18px;
+	    float: left;
+	    width: 90%;		
+	}	
+	.iletisimborder{
+		width: 90%;
+	}
+	.adressol{
+		width: 90%;
+	}
+	.iletisimform{
+		width: 87%;
+	}
+	.iletisimformuzun{
+		width: 87%;
+	}
+	.iletisimforminput3{
+		width: 94%;
+	}
+	.iletisimbuton{
+		width: 25%;
+	}
+	.iletisimasilbuton{
+	    width: 25%;
+	    margin-right: 17px		
+	}
+	.iletisimsagbar{
+		margin-top: 46px;
+		float: left;
+		margin-left: 16px;
+		width: 91%;		
+	}
+	.tabmenu ul{
+		width: 31%;
+	}
+	.tab_icerik{
+	    width: 99%;
+	    margin-left: 13px;
+	}
+	.tab_icerikim{
+	    margin-right: 17px;
+	    width: 47%;
+	    margin-bottom: 15px;
+	}
+	.tab_icerikim:nth-child(2n){
+		margin-right: 0px;
+	}
+	.ozelteklif{
+		display: none;
+	}
+	.yorumsol{
+		width: 34%;
+	}
+	.yorumsolresim{
+		margin-left: 33px;
+		margin-top: 38px;
+	}
+	.yorumsag{
+		float: left;
+		width: 58%;
+		margin-left: 13px;
+	}
+	.yorumsagbaslik{
+		margin-top: 36px;
+	}
+	.yorum:nth-child(2n) .yorumsolresim {
+	    float: right;
+	    margin-right: 52px;
+	    margin-top: 75px;
+	}
+	.sorupaketic{
+		margin-left: 13px;
+		margin-right: 0px;
+		width: 93%;		
+	}
+	.fizikselpoly{
+		display: none;
+	}
+	.fizikselpoly2{
+		display: none;
+	}
+}
+/* --- Domain price list visual refinements for EN --- */
+.fiyatlar ul li a {
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.fiyatlar ul li a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+.fiyatlar ul li span {
+  border-left: 2px solid #999;
+  padding-left: 15px;
+  margin-left: 5px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.fiyatlar ul li a:hover span {
+  transform: scale(1.03);
+  box-shadow: inset 0 0 0 999px rgba(0,0,0,0.03);
+}
+/* --- Domain price list styles (matched to TR) --- */
+.fiyatlar{
+  float: left;
+  width: 100%;
+}
+.fiyatlar ul li{
+  float: left;
+  margin-left: 30px;
+}
+.fiyatlar ul li a{
+  background: #FFFFFF;
+  border: 1px solid #F9F3F3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 13px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.fiyatlar ul li svg{
+  border-right: 1px solid #ccc;
+  padding-right: 15px;
+  margin-right: 9px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  float: left;
+  margin-left: 13px;
+  margin-top: 3%;
+}
+.fiyatlar ul li img{
+  height: 20px;
+  width: auto;
+  margin-right: 10px;
+  margin-left: 13px;
+  margin-top: 0;
+}
+.fiyatlar ul li span{
+  float: left;
+  background: #FAFAFA;
+  border-radius: 5px;
+  color: #999999;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 17px;
+  border-left: 2px solid #999; /* TR ile aynı dikey ayraç çizgisi */
+  padding-left: 15px; /* çizgi ile metin arası boşluk */
+  margin-left: 5px; /* ikon ile çizgi arası boşluk */
+  display: inline-block;
+  margin-right: 19px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.fiyatlar ul li a:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+.fiyatlar ul li a:hover span{
+  transform: scale(1.03);
+}

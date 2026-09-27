@@ -1,0 +1,175 @@
+#promoBanner {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  min-height: 36px;
+  height: auto;
+  overflow: hidden;
+  transition: none;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  color: #fff;
+  font-family: inherit;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: #0077c8;
+}
+#promoBanner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+#promoBanner .content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+#promoBanner .badge {
+  background-color: #00a651;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+#promoBanner .close {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.85;
+}
+#promoBanner .close:hover { opacity: 1; }
+#promoBanner.is-ready { visibility: visible; }
+#promoBanner.is-visible { opacity: 1; }
+/* Animated sweep background for promo banner (overlay) */
+#promoBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.34) 50%, rgba(255,255,255,0) 100%),
+                    linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.18) 50%, rgba(255,255,255,0) 100%);
+  background-size: 42% 100%, 18% 100%;
+  background-repeat: no-repeat;
+  background-position: -42% 0, -18% 0;
+  opacity: 0.6;
+  pointer-events: none;
+}
+#promoBanner.is-painted::before { animation: lightSweepBg 8s linear 0s infinite; }
+@keyframes lightSweepBg {
+  0% { background-position: -42% 0, -18% 0; }
+  50% { background-position: 50% 0, 35% 0; }
+  100% { background-position: 142% 0, 118% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #promoBanner { animation: none; }
+}
+
+/* removed animated sweep for stable background rendering */
+
+@media (max-width: 600px) {
+  #promoBanner .container { padding: 10px 12px; gap: 6px; }
+  #promoBanner svg { width: 20px; height: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) { }
+
+/* Cookie consent styles */
+#cookieConsent {
+  position: fixed !important;
+  left: 50% !important;
+  bottom: 24px !important;
+  top: auto !important;
+  z-index: 10001;
+  display: none;
+  opacity: 0;
+  background: #004d1a8a;
+  color: #fff;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateX(-50%) translateY(20px) !important;
+  border: none;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 1100px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+#cookieConsent.is-visible { 
+  display: block !important; 
+  animation: cookieFadeInUp 0.8s ease forwards;
+}
+
+@keyframes cookieFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(30px) !important;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) !important;
+  }
+}
+
+#cookieConsent .cc-container {
+  max-width: 1178px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+#cookieConsent .cc-content { min-width: 0; }
+#cookieConsent .cc-text { 
+  line-height: 1.5; 
+  font-size: 14px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+#cookieConsent.is-expanded .cc-text { 
+  white-space: normal; 
+  overflow: visible;
+  text-overflow: clip;
+}
+#cookieConsent .cc-right { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-shrink: 0; }
+#cookieConsent .cc-btn { appearance: none; border: none; cursor: pointer; font-size: 14px; padding: 8px 12px; border-radius: 6px; white-space: nowrap; }
+#cookieConsent .cc-btn.accept { background-image: linear-gradient(135deg, #004d1a, #00a651); color: #fff; font-weight: 600; box-shadow: 0 0 0 1px rgba(255,255,255,0.15) inset; }
+#cookieConsent .cc-btn.more { background-color: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.4); display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; }
+#cookieConsent .cc-btn.more svg { width: 16px; height: 16px; transition: transform 200ms ease; }
+#cookieConsent.is-expanded .cc-btn.more svg { transform: rotate(180deg); }
+@media (max-width: 700px) { 
+  #cookieConsent { 
+    top: auto !important; 
+    bottom: 16px !important; 
+    left: 50% !important; 
+    width: calc(100% - 24px); 
+    max-width: 560px; 
+  } 
+  #cookieConsent.is-visible {
+    animation: cookieFadeInUpMobile 0.8s ease forwards;
+  }
+}
+
+@keyframes cookieFadeInUpMobile {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px) !important;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) !important;
+  }
+}
+
+/* Cookie consent plain theme (no blur) */
+#cookieConsent.cookie-theme-glass { border-radius: 12px; }
+/* unified above */
