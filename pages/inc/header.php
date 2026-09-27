@@ -42,7 +42,6 @@
     <meta name="theme-color" content="#0b2545">
 
 
-    <link rel="stylesheet" href="../asset/css/libs/animate.css">
     <link rel="stylesheet" href="../asset/css/reset.css">
     <link rel="stylesheet" href="../asset/css/site.css">
     <link rel="stylesheet" href="../asset/css/header-notification.css">
@@ -269,7 +268,7 @@ window.addEventListener('load', function() {
 <section>
     <!-- Mobildeki Menü -->
     <div class="mobilmenu">
-        <div class="mobillogo"> <a href="https://turkbil.net.tr/" title=""> <img src="../asset/resimler/footerlogo.png" alt="Türkbil"> </a></div>
+        <div class="mobillogo"> <a href="https://turkbil.net.tr/" title=""> <img src="../asset/resimler/footerlogo.png" alt="Türkbil" loading="lazy" decoding="async"> </a></div>
         <div class="menukapat"> <i class="fa-solid fa-xmark"></i> </div>
         <div class="mobilmenum">
             <ul>

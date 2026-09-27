@@ -1,3 +1,25 @@
+// Kaydırınca belirme (WOW.js + animate.css yerine)
+(function(){
+  var html = document.documentElement;
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  html.classList.add('tb-anim');
+
+  document.addEventListener('DOMContentLoaded', function(){
+    var gozlemci = new IntersectionObserver(function(girdiler){
+      girdiler.forEach(function(girdi){
+        if (!girdi.isIntersecting) return;
+        girdi.target.classList.add('tb-gorunur');
+        gozlemci.unobserve(girdi.target);
+      });
+    }, { rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.wow').forEach(function(el){
+      gozlemci.observe(el);
+    });
+  });
+})();
+
 $(function () {
     // Tüm sekme içeriklerini gizle, sadece ikinci sekme açık
     $("div.tab_icerik").hide();

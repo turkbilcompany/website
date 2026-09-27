@@ -185,7 +185,7 @@ require 'inc/header.php';
             <div class="paketler">
                 <div class="paketlerduzenle">
                     <div class="ozelteklif wow flipInX"  data-wow-duration="1s">
-                        <img src="../asset/resimler/ozel.png" alt="">
+                        <img src="../asset/resimler/ozel.png" loading="lazy" decoding="async" alt="">
                         <div class="ozelteklifbg">
                             <div class="ozelteklifbgsol">
                                 <div class="ozelteklifbgbaslik"> Kaynak kullanımlarınızın tesbitini uzman ekibimizle birlikte yapabilirsiniz. </div>
@@ -208,7 +208,7 @@ require 'inc/header.php';
                 <div class="paketlerduzenle">
                     <div class="turkwhy wow flipInX"  data-wow-duration="1s">
                         <div class="turkwhysvg">
-                            <img src="../asset/resimler/whysvg.png" alt="">
+                            <img src="../asset/resimler/whysvg.png" loading="lazy" decoding="async" alt="">
                         </div>
                         <div class="turkwhyyazi">
                             Dünya standartlarında yenilikçi verimerkezi hizmetleri!
@@ -217,7 +217,7 @@ require 'inc/header.php';
                     <div class="genelyorum">
                         <div class="yorum wow swing"  data-wow-duration="1s">
                             <div class="yorumsol">
-                                <div class="yorumsolresim"> <img src="../asset/resimler/user.png" alt="">
+                                <div class="yorumsolresim"> <img src="../asset/resimler/user.png" loading="lazy" decoding="async" alt="">
                                     <div class="yorumsolbg"></div>
                                     <div class="yorumsolbg2"></div>
                                     <div class="yorumsagborder"></div>
@@ -230,7 +230,7 @@ require 'inc/header.php';
                         </div>
                         <div class="yorum  wow swing"  data-wow-duration="1s">
                             <div class="yorumsol">
-                                <div class="yorumsolresim"> <img src="../asset/resimler/user2.png" alt="">
+                                <div class="yorumsolresim"> <img src="../asset/resimler/user2.png" loading="lazy" decoding="async" alt="">
                                     <div class="yorumsolbg"></div>
                                     <div class="yorumsolbg2"></div>
                                     <div class="yorumsagborder"></div>
@@ -244,7 +244,7 @@ require 'inc/header.php';
                         </div>
                         <div class="yorum wow swing"  data-wow-duration="1s">
                             <div class="yorumsol">
-                                <div class="yorumsolresim"> <img src="../asset/resimler/user3.png" alt="">
+                                <div class="yorumsolresim"> <img src="../asset/resimler/user3.png" loading="lazy" decoding="async" alt="">
                                     <div class="yorumsolbg"></div>
                                     <div class="yorumsolbg2"></div>
                                     <div class="yorumsagborder"></div>
