@@ -160,7 +160,7 @@ window.addEventListener('load', function() {
             <div class="headeraltduzenle">
                 <div class="mobilbars"> <i class="fa-solid fa-bars"></i> </div>
                 <div class="headeraltsol">
-                    <div class="logo"> <a href="https://turkbil.net.tr/" title=""> <img src="../asset/resimler/logo.png" alt="" style="
+                    <div class="logo"> <a href="https://turkbil.net.tr/" title=""> <img src="../asset/resimler/logo.png" alt="Türkbil - Türkiye'nin Bilişim Merkezi" style="
     width: 170px;
 "> </a> </div>
                 </div>
@@ -268,7 +268,7 @@ window.addEventListener('load', function() {
 <section>
     <!-- Mobildeki Menü -->
     <div class="mobilmenu">
-        <div class="mobillogo"> <a href="" title=""> <img src="../asset/resimler/footerlogo.png" alt=""> </a></div>
+        <div class="mobillogo"> <a href="" title=""> <img src="../asset/resimler/footerlogo.png" alt="Türkbil"> </a></div>
         <div class="menukapat"> <i class="fa-solid fa-xmark"></i> </div>
         <div class="mobilmenum">
             <ul>
