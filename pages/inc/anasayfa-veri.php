@@ -69,31 +69,3 @@ $tbGuven = [
 // Örnek: ['yorum' => '…', 'isim' => 'Ad Soyad', 'unvan' => 'Firma / Görev'],
 $tbYorumlar = [
 ];
-
-// Ana sayfa SSS (paket sayfalarındaki cevaplardan derlendi)
-$tbSss = [
-    [
-        'soru'  => 'Sunucularınız nerede barınıyor?',
-        'cevap' => 'Sunucularımız Türkiye’nin Bursa ilinde konumlandırılmıştır.',
-    ],
-    [
-        'soru'  => 'Hangi kontrol panelini kullanıyorsunuz?',
-        'cevap' => 'cPanel veya DirectAdmin olmak üzere, kullanıcı talebine yönelik kontrol paneli sunulur.',
-    ],
-    [
-        'soru'  => 'Paketimi daha sonradan değiştirebilir miyim?',
-        'cevap' => 'Evet. İhtiyaçlarınız doğrultusunda paket yükseltme işlemi yapabilirsiniz; yükseltme esnasında sistem kesintiye uğramaz.',
-    ],
-    [
-        'soru'  => 'Yedekleme hizmetiniz var mı?',
-        'cevap' => 'Kullanıcı talebi üzerine istenen periyotlarda tarafımızca yedek kaydı tutulabilir.',
-    ],
-    [
-        'soru'  => 'Sunucu barındırma (Co-Location) hizmetiniz var mı?',
-        'cevap' => 'Evet, Co-Location hizmetimiz mevcuttur. Kabin hizmetleri veya adetli Co-Location hizmeti için destek bildirimi ya da e-posta ile bize ulaşabilirsiniz.',
-    ],
-    [
-        'soru'  => 'Uzman yardımı alabilir miyim?',
-        'cevap' => 'Teknik olarak aşamadığınız konuları Türkbil uzman ekibine sorabilir, geliştirici önerilerle çözüme kolayca ulaşabilirsiniz.',
-    ],
-];

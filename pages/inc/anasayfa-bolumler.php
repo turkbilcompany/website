@@ -102,38 +102,3 @@ $tbTumRakamlar = array_merge($tbRakamlar, $tbEkRakamlar);
         </div>
     </section>
     <?php } ?>
-
-    <!-- Sık sorulan sorular -->
-    <section class="tb-bolum">
-        <div class="tb-kap tb-sss-kap">
-            <div class="tb-bolum-baslik">
-                <span class="tb-ust">Sık sorulan sorular</span>
-                <h2>Aklınıza takılanlar</h2>
-                <p>Cevabını bulamadığınız sorular için <a href="https://my.turkbil.net.tr/hesabim/destek-talebi-olustur">uzman ekibimize</a> ulaşabilirsiniz.</p>
-            </div>
-            <div class="tb-sss">
-                <?php foreach ($tbSss as $sss) { ?>
-                <details>
-                    <summary><?php echo tb_e($sss['soru']); ?></summary>
-                    <p><?php echo tb_e($sss['cevap']); ?></p>
-                </details>
-                <?php } ?>
-            </div>
-        </div>
-    </section>
-
-    <script type="application/ld+json">
-    <?php
-    echo json_encode([
-        '@context' => 'https://schema.org',
-        '@type' => 'FAQPage',
-        'mainEntity' => array_map(function ($sss) {
-            return [
-                '@type' => 'Question',
-                'name' => $sss['soru'],
-                'acceptedAnswer' => ['@type' => 'Answer', 'text' => $sss['cevap']],
-            ];
-        }, $tbSss),
-    ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
-    ?>
-    </script>
